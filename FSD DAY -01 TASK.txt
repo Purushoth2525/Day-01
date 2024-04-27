@@ -1,0 +1,39 @@
+1. Difference between HTTP1.1 vs HTTP2:
+
+*.HTTP/1.1 uses plaintext for communication between clients and servers, which can be inefficient for parsing and processing,
+  HTTP/2 uses a binary protocol, which is more efficient to parse and can be optimized for performance.
+
+
+*.HTTP/2 compresses header data, reducing overhead and improving performance compared to HTTP/1.1 which sends headers as plaintext with each request/response.
+
+*.HTTP/2 allows servers to push resources to the client cache before they are explicitly requested This can improve page load times by anticipating the client's needs.
+
+*.HTTP/1.1 uses multiple connections for parallel downloading of resources while HTTP/2 multiplexes multiple requests and responses over a single TCP connection. This reduces latency and improves efficiency.
+
+*.HTTP/2 includes flow control mechanisms at both the application and transport layer preventing one stream from overwhelming the connection and impacting others.
+ 
+*.HTTP/2 supports stream prioritization, allowing clients to specify the importance of individual resources. This enables more efficient resource allocation and faster loading of critical assets.
+
+
+2.   Blog about objects and its internal representation in Javascript:
+
+
+*Object Literal Syntax: In JavaScript, objects can be created using the object literal syntax, which consists of key-value pairs enclosed in curly braces {} 
+For example:
+const person = {
+    name: "rahul",
+    age: 27,
+    profession: "trader"
+};
+
+
+*One of the key features of JavaScript objects is their dynamic nature Properties can be added, modified, or deleted from objects at runtime, allowing for flexible data manipulation.
+
+
+*JavaScript uses prototype-based inheritance, where objects inherit properties and methods from other objects. Each object in JavaScript has a prototype object which it inherits properties and methods from
+
+*JavaScript engines optimize property access by using hidden classes and inline caching. Hidden classes are used to efficiently represent the shape of objects while inline caching optimizes property access by storing the result of property lookups for subsequent use
+
+
+*Objects in JavaScript can be serialized into JSON (JavaScript Object Notation) format using JSON.stringify() and deserialized from JSON format using JSON.parse()
+
